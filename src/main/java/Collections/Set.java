@@ -16,7 +16,7 @@ public class Set {
         hashSet.add(20);
 
         System.out.println("\nHashSet:");
-        hashSet.stream().forEach(System.out::println);
+        hashSet.forEach(System.out::println);
 
         System.out.println("\nHashSet contains 20: " + hashSet.contains(20));
 
@@ -31,7 +31,7 @@ public class Set {
         linkedHashSet.add("Paris");
 
         System.out.println("\nLinkedHashSet:");
-        linkedHashSet.stream().forEach(System.out::println);
+        linkedHashSet.forEach(System.out::println);
 
         System.out.println("\nLinkedHashSet contains 'New York': " + linkedHashSet.contains("New York"));
 
@@ -46,7 +46,7 @@ public class Set {
         treeSet.add(9);
 
         System.out.println("\nTreeSet:");
-        treeSet.stream().forEach(System.out::println);
+        treeSet.forEach(System.out::println);
 
         System.out.println("\nTreeSet contains 10: " + treeSet.contains(10));
     }

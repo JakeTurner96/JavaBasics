@@ -11,11 +11,11 @@ public class Lists {
         List<Integer> arrayList = new ArrayList<>(Arrays.asList(10,5,2,8,3,9,1,6,4,7));
 
         System.out.println("\nUnsorted ArrayList:");
-        arrayList.stream().forEach(System.out::println);
+        arrayList.forEach(System.out::println);
 
         System.out.println("\nSorted ArrayList:");
         Collections.sort(arrayList);
-        arrayList.stream().forEach(System.out::println);
+        arrayList.forEach(System.out::println);
 
         System.out.println("\nArrayList contains 10: " + arrayList.contains(10));
 
@@ -30,11 +30,11 @@ public class Lists {
         linkedList.add("Jenny");
 
         System.out.println("\nUnsorted LinkedList:");
-        linkedList.stream().forEach(System.out::println);
+        linkedList.forEach(System.out::println);
 
         Collections.sort(linkedList);
         System.out.println("\nSorted LinkedList:");
-        linkedList.stream().forEach(System.out::println);
+        linkedList.forEach(System.out::println);
 
         System.out.println("\nLinkedList contains 'Simon': " + linkedList.contains("Simon"));
 

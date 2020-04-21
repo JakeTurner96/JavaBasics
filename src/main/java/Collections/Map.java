@@ -1,12 +1,9 @@
 package Collections;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.TreeMap;
+import java.util.*;
 
 //Stores unique data in key value pairs (No duplicate keys).
-public class Map {
+public class Map<S, S1> {
 
     public static void main(String[] args) {
         //HashMap
@@ -22,9 +19,7 @@ public class Map {
         System.out.println("\nHashMap:");
         Iterator<Integer> itr = hashMap.keySet().iterator();
 
-        hashMap.forEach((key, value) -> {
-            System.out.println("Key:"+ key + ", Value:" + value);
-        });
+        hashMap.forEach((key, value) -> System.out.println("Key:"+ key + ", Value:" + value));
 
         System.out.println("\nHashMap contains value 'a': " + hashMap.containsValue("a"));
         System.out.println("HashMap contains key 20: " + hashMap.containsKey(20));
@@ -40,16 +35,14 @@ public class Map {
 
         System.out.println("\nLinkedHashMap:");
 
-        linkedHashMap.forEach((key, value) -> {
-            System.out.println("Key:"+ key + ", Value:" + value);
-        });
+        linkedHashMap.forEach((key, value) -> System.out.println("Key:"+ key + ", Value:" + value));
 
         System.out.println("\nLinkedHashMap contains value 'Tokyo': " + linkedHashMap.containsValue("Tokyo"));
         System.out.println("LinkedHashMap contains key 'Peru': " + linkedHashMap.containsKey("Peru"));
 
         //TreeMap
         //Stores keys in sorted order
-        TreeMap<String, String> treeMap = new TreeMap();
+        SortedMap<String, String> treeMap = new TreeMap<>();
         treeMap.put("Microsoft", "Bill Gates");
         treeMap.put("Apple", "Steve Jobs");
         treeMap.put("Tesla", "Elon Musk");
@@ -58,9 +51,7 @@ public class Map {
 
         System.out.println("\nTreeMap:");
 
-        treeMap.forEach((key, value) -> {
-            System.out.println("Key:"+ key + ", Value:" + value);
-        });
+        treeMap.forEach((key, value) -> System.out.println("Key:"+ key + ", Value:" + value));
 
         System.out.println("\nTreeMap contains value 'Bill Gates': " + treeMap.containsValue("Bill Gates"));
         System.out.println("TreeMap contains key 'Amazon': " + treeMap.containsKey("Amazon"));
